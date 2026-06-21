@@ -16,7 +16,7 @@ local BS, BI, SF = 5, 6, 1
 local DM = 2000
 
 local SW, SH = getScreenResolution()
-local ws = new.bool(true)
+local ws = new.bool(false)
 
 local CN = 'flatped'
 local cd = cfg.load({
@@ -253,7 +253,7 @@ imgui.OnFrame(
 )
 
 function main()
-    sampRegisterChatCommand('flatped', function()
+    sampRegisterChatCommand('chams', function()
         ws[0] = not ws[0]
     end)
     while true do wait(0) end
